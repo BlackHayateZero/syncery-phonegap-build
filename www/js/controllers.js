@@ -1,5 +1,8 @@
 angular.module('starter.controllers', [])
 
+  // controller for syncery tab
+.controller('SynceryCtrl', function($scope) {})
+
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {

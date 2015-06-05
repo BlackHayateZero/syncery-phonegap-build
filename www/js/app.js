@@ -38,6 +38,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // Each tab has its own nav history stack:
 
+  // new tab for syncery
+      .state('tab.syncery', {
+        url: '/syncery',
+        views: {
+          'tab-dash': {
+            templateUrl: 'templates/tab-syncery.html',
+            controller: 'SynceryCtrl'
+          }
+        }
+      })
+
   .state('tab.dash', {
     url: '/dash',
     views: {
