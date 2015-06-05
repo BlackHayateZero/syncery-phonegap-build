@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-  // controller for syncery tab
+// controller for syncery tab
 .controller('SynceryCtrl', function($scope) {})
 
 .controller('DashCtrl', function($scope) {})
