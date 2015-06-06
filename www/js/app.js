@@ -42,7 +42,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('tab.syncery', {
     url: '/syncery',
     views: {
-      'tab-dash': {
+      'tab-syncery': {
         templateUrl: 'templates/tab-syncery.html',
         controller: 'SynceryCtrl'
       }
@@ -89,6 +89,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/syncery');
 
 });

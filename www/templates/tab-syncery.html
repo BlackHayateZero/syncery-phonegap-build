@@ -1,15 +1,17 @@
 <ion-view view-title="Syncery">
   <ion-content class="padding">
+    <!-- views -->
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="view in views" type="item-text-wrap" href="#/tab/syncery/{{view.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{view.name}}</h2>
+        <p>{{view.version}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+    <!-- end of views -->
     <div class="list card">
-        <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
-        </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
+      <div class="item item-divider">View Selector - View One</div>
       <div class="item item-body">
         <div>
           You ate an apple today!
@@ -17,10 +19,21 @@
       </div>
     </div>
     <div class="list card">
-      <div class="item item-divider">Upcoming</div>
+      <div class="item item-divider">View Selector - View Two</div>
       <div class="item item-body">
         <div>
           You have <b>29</b> meetings on your calendar tomorrow.
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Group members</div>
+      <div class="item item-body">
+        <div>
+          Hi! We are the architecture team.
+          <br/><br/>
+          Regards,<br/>
+          Nader, Martin, Murat, Sascha, Ignatius
         </div>
       </div>
     </div>
