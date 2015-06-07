@@ -48,6 +48,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+    .state('tab.view-detail', {
+      url: '/syncery/:viewId',
+      views: {
+        'tab-syncery': {
+          templateUrl: 'templates/view-detail.html',
+          controller: 'ViewDetailCtrl'
+        }
+      }
+    })
 
   .state('tab.dash', {
     url: '/dash',

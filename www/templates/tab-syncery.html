@@ -1,16 +1,15 @@
 <ion-view view-title="Syncery">
-  <ion-content class="padding">
+  <ion-content>
     <!-- views -->
     <ion-list>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="view in views" type="item-text-wrap" href="#/tab/syncery/{{view.id}}">
-        <img ng-src="{{chat.face}}">
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="view in syncery" type="item-text-wrap" href="#/tab/syncery/{{view.id}}">
         <h2>{{view.name}}</h2>
         <p>{{view.version}}</p>
         <i class="icon ion-chevron-right icon-accessory"></i>
       </ion-item>
     </ion-list>
     <!-- end of views -->
-    <div class="list card">
+    <!--<div class="list card">
       <div class="item item-divider">View Selector - View One</div>
       <div class="item item-body">
         <div>
@@ -25,9 +24,9 @@
           You have <b>29</b> meetings on your calendar tomorrow.
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="list card">
-      <div class="item item-divider">Group members</div>
+      <div class="item item-divider">Architecture team members</div>
       <div class="item item-body">
         <div>
           Hi! We are the architecture team.

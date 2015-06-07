@@ -1,7 +1,13 @@
 angular.module('starter.controllers', [])
 
 // controller for syncery tab
-.controller('SynceryCtrl', function($scope) {})
+.controller('SynceryCtrl', function($scope, Views) {
+      $scope.views = Views.all();
+    })
+
+.controller('ViewDetailCtrl', function($scope, $stateParams, Views) {
+  $scope.view = Views.get($stateParams.viewId);
+})
 
 .controller('DashCtrl', function($scope) {})
 
